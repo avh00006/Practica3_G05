@@ -1,4 +1,4 @@
-package es.ujaen.git.applicati;
+package es.ujaen.git.Practica1;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
