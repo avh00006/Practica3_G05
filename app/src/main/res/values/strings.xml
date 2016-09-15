@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Applicati</string>
+    <string name="app_name">Practica1</string>
+    <string name="main_title">Practica1</string>
+    <string name="main_description">Práctica realizada para la asignatura <i>Servicios Móviles</i> del Grado de Ingeniería Telemática de la Universidad de Jaén\nGrupo 6: Angel Veenteo Heras y Francisco Jose Aguado Martin</string>
 </resources>
