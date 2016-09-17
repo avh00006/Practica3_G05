@@ -2,4 +2,11 @@
     <string name="app_name">Practica1</string>
     <string name="main_title">Practica1</string>
     <string name="main_description">Práctica realizada para la asignatura <i>Servicios Móviles</i> del Grado de Ingeniería Telemática de la Universidad de Jaén\nGrupo 6: Angel Veenteo Heras y Francisco Jose Aguado Martin</string>
+    <string name="user">Nick</string>
+    <string name="user2">Nombre de usuario o nick</string>
+    <string name="pass">Su clave de acceso</string>
+    <string name="pass2">Contraseña</string>
+    <string name="dominio">Dominio</string>
+    <string name="puerto">Puerto</string>
+    <string name="loginbtn">Login</string>
 </resources>
