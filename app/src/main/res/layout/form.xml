@@ -5,7 +5,8 @@
     android:paddingBottom="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:paddingTop="16dp">
+    android:paddingTop="16dp"
+    android:background="@drawable/fondo2">
 
     <TableLayout
         android:layout_width="fill_parent"
@@ -20,14 +21,18 @@
                 android:layout_weight="2"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/user" />
+                android:text="@string/user"
+                android:textColor="#FFFFFF" />
 
             <EditText
                 android:layout_width="0dp"
                 android:layout_weight="3"
                 android:hint="@string/user2"
                 android:layout_height="wrap_content"
-                android:id="@+id/user2" />
+                android:id="@+id/user2"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textColorHighlight="#FFFFFF" />
         </TableRow>
 
         <TableRow
@@ -39,7 +44,8 @@
                 android:layout_weight="2"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/pass2" />
+                android:text="@string/pass2"
+                android:textColor="#FFFFFF" />
 
             <EditText
                 android:layout_width="0dp"
@@ -48,7 +54,8 @@
                 android:hint="Su clave de acceso"
                 android:inputType="textPassword"
 
-                android:id="@+id/pass" />
+                android:id="@+id/pass"
+                android:textColorHint="#FFFFFF" />
         </TableRow>
 
         <TableRow
@@ -60,14 +67,16 @@
                 android:layout_weight="2"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/dominio" />
+                android:text="@string/dominio"
+                android:textColor="#FFFFFF" />
 
             <EditText
                 android:layout_width="0dp"
                 android:layout_weight="3"
                 android:hint="Dirección de red o dominio"
                 android:layout_height="wrap_content"
-                android:id="@+id/dominio" />
+                android:id="@+id/dominio"
+                android:textColorHint="#FFFFFF" />
         </TableRow>
 
         <TableRow
@@ -79,14 +88,17 @@
                 android:layout_weight="2"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/puerto" />
+                android:text="@string/puerto"
+                android:textColor="#FFFFFF" />
 
             <EditText
                 android:layout_width="0dp"
                 android:layout_weight="3"
                 android:hint="1486"
                 android:layout_height="wrap_content"
-                android:id="@+id/puerto" />
+                android:id="@+id/puerto"
+                android:textColorHint="#FFFFFF"
+                android:textColorLink="#FFFFFF" />
         </TableRow>
 
     </TableLayout>
