@@ -8,5 +8,7 @@
     <string name="pass2">Contraseña</string>
     <string name="dominio">Dominio</string>
     <string name="puerto">Puerto</string>
-    <string name="loginbtn">Login</string>
+    <string name="loginbtn">Registrar</string>
+    <string name="title_activity_activity_login">Activity_login</string>
+    <string name="title_activity_activity_register">Activity_register</string>
 </resources>
