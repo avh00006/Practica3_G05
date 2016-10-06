@@ -30,4 +30,15 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:gravity="center"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/main_text_description"
+        android:id="@+id/main_frame"
+        android:background="@android:color/holo_blue_bright">
+
+    </FrameLayout>
+
+
 </RelativeLayout>

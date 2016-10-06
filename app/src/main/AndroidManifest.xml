@@ -15,14 +15,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Activity_login"
-            android:label="@string/title_activity_activity_login"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Activity_register"
-            android:label="@string/title_activity_activity_register"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

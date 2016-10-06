@@ -109,7 +109,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="right"
         android:text="@string/loginbtn"
-        android:id="@+id/loginbtn"/>
+        android:id="@+id/loginbtn"
+        android:onClick="onSend" />
 
     <TextView android:id="@+id/link_to_login"
         android:layout_width="fill_parent"
