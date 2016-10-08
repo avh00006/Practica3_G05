@@ -22,18 +22,6 @@ public class MainActivity extends AppCompatActivity {
         ft.addToBackStack(null);
         ft.commit();
 
-        Button boton = (Button)findViewById(R.id.loginbtn);
-
-        boton.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                String nombre = mEditUser.getText().toString();
-                Autenticacion datos = new Autentication (nombre,null,null,null);
-                Toast.makeText(MainActivity.this,"Pulsado", Toast.LENGTH_SHORT).show();
-            }
-        });
     }
 
-    public void onSend(View view){
-        Toast.makeText(this,"Pulsado", Toast.LENGTH_SHORT).show();
-    }
 }

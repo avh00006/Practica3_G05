@@ -7,8 +7,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
-
+import android.widget.Toast;
 
 
 /**
@@ -28,6 +29,7 @@ public class AuthFragment extends Fragment {
     private String mUser="";
     private String mPass="";
 
+    private EditText mEditUser=null;
 
 
 
@@ -69,11 +71,22 @@ public class AuthFragment extends Fragment {
         // Inflate the layout for this fragment
         View fragmento = inflater.inflate(R.layout.fragment_auth, container, false);
 
-        EditText user = (EditText)fragmento.findViewById(R.id.user2);
+        mEditUser = (EditText)fragmento.findViewById(R.id.user2);
         EditText pass = (EditText)fragmento.findViewById(R.id.pass);
 
-        user.setText(mUser);
+        mEditUser.setText(mUser);
         pass.setText(mPass);
+
+        Button boton = (Button)fragmento.findViewById(R.id.loginbtn);
+
+        boton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                String nombre = mEditUser.getText().toString();
+                Autentication datos = new Autentication (nombre,null,null,0);
+                Toast.makeText(getActivity(), "Nombre "+datos.getUser(), Toast.LENGTH_SHORT).show();
+            }
+        });
 
         return fragmento;
 
