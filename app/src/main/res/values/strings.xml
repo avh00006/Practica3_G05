@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Practica1</string>
     <string name="main_title">Practica1</string>
-    <string name="main_description">Práctica realizada para la asignatura <i>Servicios Móviles</i> del Grado de Ingeniería Telemática de la Universidad de Jaén\nGrupo 6: Angel Veenteo Heras y Francisco Jose Aguado Martin</string>
+    <string name="main_description">Práctica realizada para la asignatura <i>Servicios Móviles</i> del Grado de Ingeniería Telemática de la Universidad de Jaén\nGrupo 6: Angel Venteo Heras y Francisco Jose Aguado Martin</string>
     <string name="user">Nick</string>
     <string name="user2">Nombre de usuario o nick</string>
     <string name="pass">Su clave de acceso</string>
@@ -9,8 +9,11 @@
     <string name="dominio">Dominio</string>
     <string name="puerto">Puerto</string>
     <string name="loginbtn">Registrar</string>
+    <string name="reg">Registrate!</string>
+    <string name="info">Información</string>
     <string name="title_activity_activity_login">Activity_login</string>
     <string name="title_activity_activity_register">Activity_register</string>
+    <string name="edit_puerto">Introduzca el puerto:</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

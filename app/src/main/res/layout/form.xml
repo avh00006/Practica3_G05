@@ -16,7 +16,7 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent">
 
-            <EditText
+            <TextView
                 android:layout_width="0dp"
                 android:layout_weight="2"
                 android:layout_height="wrap_content"
@@ -51,11 +51,14 @@
                 android:layout_width="0dp"
                 android:layout_weight="3"
                 android:layout_height="wrap_content"
-                android:hint="Su clave de acceso"
+                android:hint="@string/pass"
                 android:inputType="textPassword"
 
                 android:id="@+id/pass"
-                android:textColorHint="#FFFFFF" />
+                android:textColorHint="#FFFFFF"
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorLink="@color/abc_primary_text_disable_only_material_dark" />
         </TableRow>
 
         <TableRow
@@ -76,7 +79,8 @@
                 android:hint="Dirección de red o dominio"
                 android:layout_height="wrap_content"
                 android:id="@+id/dominio"
-                android:textColorHint="#FFFFFF" />
+                android:textColorHint="#FFFFFF"
+                android:textColor="#FFFFFF" />
         </TableRow>
 
         <TableRow
@@ -84,22 +88,23 @@
             android:layout_height="fill_parent">
 
             <TextView
-                android:layout_width="0dp"
                 android:layout_weight="2"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/puerto"
                 android:textColor="#FFFFFF" />
 
             <EditText
-                android:layout_width="0dp"
                 android:layout_weight="3"
-                android:hint="1486"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/puerto"
                 android:textColorHint="#FFFFFF"
                 android:textColorLink="#FFFFFF"
-                android:inputType="number" />
+                android:hint="@string/edit_puerto"
+                android:inputType="number"
+                android:textColor="#FFFFFF" />
         </TableRow>
 
     </TableLayout>
@@ -109,25 +114,16 @@
         android:layout_height="wrap_content"
         android:layout_gravity="right"
         android:text="@string/loginbtn"
-        android:id="@+id/loginbtn"/>
+        android:id="@+id/loginbtn"
+        android:onClick="Autenticacion" />
 
-    <TextView android:id="@+id/link_to_login"
-        android:layout_width="fill_parent"
+    <Button
+        style="@style/Base.V12.Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dip"
-        android:layout_marginBottom="40dip"
-        android:text="Ya tienes cuenta! Accede!"
-        android:gravity="center"
-        android:textSize="20dip"
-        android:textColor="#0b84aa"/>
-
-    <TextView android:id="@+id/register_error"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dip"
-        android:layout_marginBottom="40dip"
-
-        android:gravity="center"
-        android:textSize="20dip"
-        android:textColor="#0b84aa"/>
+        android:text="@string/info"
+        android:id="@+id/info"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/holo_green_dark"
+        android:onClick="ejecutar_info" />
 </LinearLayout>

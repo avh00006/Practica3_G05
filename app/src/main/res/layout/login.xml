@@ -26,24 +26,17 @@
         android:layout_width="wrap_content"
         android:text="LogIn"
         android:layout_gravity="center_horizontal"
-        android:paddingLeft="15dip" android:paddingRight="15dip" />
+        android:paddingLeft="15dip" android:paddingRight="15dip"
+        android:onClick="Autenticacion" />
 
-    <TextView android:id="@+id/link_to_register"
-        android:layout_width="fill_parent"
+    <Button
+        style="@style/Base.V12.Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dip"
-        android:layout_marginBottom="40dip"
-        android:text="registrate!"
-        android:gravity="center"
-        android:textSize="20dip"
-        android:textColor="#0b84aa"/>
-
-    <TextView android:id="@+id/login_error"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dip"
-        android:layout_marginBottom="40dip"
-        android:gravity="center"
-        android:textSize="20dip"
-        android:textColor="#0b84aa"/>
+        android:text="@string/reg"
+        android:id="@+id/reg"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="50dp"
+        android:clickable="false"
+        android:onClick="registrar" />
 </LinearLayout>
