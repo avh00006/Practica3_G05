@@ -38,9 +38,9 @@ public class MainActivity extends AppCompatActivity {
         if(f==null){
 
             AuthFragment au = AuthFragment.newInstance("Juan","6000");
-            /*Se añade el fragmento a la vista*/
+            /**Se añade el fragmento a la vista*/
             ft.add(R.id.main_frame,au);
-            /*Se añade a la pila de procesos*/
+            /**Se añade a la pila de procesos*/
             ft.addToBackStack(null);
 
         }
