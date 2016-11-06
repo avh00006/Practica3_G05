@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Método que cambia a otra actividad donde se muestra informacion de la práctica
      * @param view es el objeto de la vista
-     * @param in crea una intención para cambiar de actividad
+     * @param Intent in crea una intención para cambiar de actividad
      */
     public void ejecutar_info (View view){
         Intent in = new Intent(this,InfoClase.class);
@@ -85,4 +85,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
 
     }
+
+
 }
