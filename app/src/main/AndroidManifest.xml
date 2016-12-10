@@ -20,10 +20,7 @@
         <activity android:name=".Autenticado" />
         <activity android:name=".InfoClase" />
         <activity android:name=".Logeo"/>
-        <activity
-            android:name=".SharedPrefsActivity"
-            android:label="@string/title_activity_shared_prefs"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity android:name=".SharedPrefsActivity"/>
     </application>
 
 </manifest>

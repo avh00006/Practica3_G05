@@ -20,7 +20,7 @@ public class SharedPrefsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shared_prefs);
 
-        Bundle bundle = getIntent().getExtras();
+        /*Bundle bundle = getIntent().getExtras();
         if(bundle!=null){
 
            
@@ -35,7 +35,7 @@ public class SharedPrefsActivity extends AppCompatActivity {
 
         // Reading from SharedPreferences
         String value = settings.getString("key", "");
-        Log.i("Preferences","SESION:"+value);
+        Log.i("Preferences","SESION:"+value);*/
 
     }
 

@@ -77,28 +77,15 @@ public class Logeo extends Activity implements View.OnClickListener,Protocolo{
             InetSocketAddress direccion = new InetSocketAddress("169.254.83.12",6000);
             user = usuario.getText().toString();
             pass = contraseña.getText().toString();
-            if(user.equals(USERNAME)&&pass.equals(PASSWORD)){
-
-
-
-                MiTareaAsincrona conectar = new MiTareaAsincrona(this);
-                conectar.execute(direccion);
+            MiTareaAsincrona conectar = new MiTareaAsincrona(this,user,pass);
+            conectar.execute(direccion);
 
 
 
 
 
-            }else{
-
-                Toast toast1 =
-                        Toast.makeText(getApplicationContext(),
-                                "Usuario incorrecto", Toast.LENGTH_SHORT);
 
 
-
-                toast1.show();
-
-            }
 
 
 
@@ -124,9 +111,14 @@ class MiTareaAsincrona extends AsyncTask<InetSocketAddress, Void, String> implem
     String sesion;
     public static final String PREFERENCE = "Sesion";
     private Context context;
+    private String usuario;
+    private String contraseña;
 
-    MiTareaAsincrona (Context context){
+    MiTareaAsincrona (Context context,String usuario,String contraseña){
+
         this.context = context;
+        this.usuario = usuario;
+        this.contraseña = contraseña;
     }
 
 
@@ -142,34 +134,36 @@ class MiTareaAsincrona extends AsyncTask<InetSocketAddress, Void, String> implem
 
             cli=new Socket();
             cli.connect(arg0[0]);
-            Autenticacion aut = new Autenticacion();
             BufferedReader is = new BufferedReader(new InputStreamReader(cli.getInputStream()));
             DataOutputStream flujo = new DataOutputStream(cli.getOutputStream());
             entrada=is.readLine();
-            //aut.setUsuario();
-            String user = USER +SP+USERNAME+CRLF;
+
+
+            String user = USER +SP+usuario+CRLF;
 
             //System.currentTimeMillis();
             flujo.write(user.getBytes());
             entrada=is.readLine();
 
-            String pass = PASS+SP+PASSWORD+CRLF;
+            String pass = PASS+SP+contraseña+CRLF;
 
             flujo.write(pass.getBytes());
             entrada=is.readLine();
-            sesion = entrada;
+
+            if(entrada.equals(ERROR)){
+                sesion=null;
+
+            }else{
+
+                entrada=sesion;
+            }
 
 
 
-            /*Intent i = new Intent(this, SharedPrefsActivity.class);
-            i.putExtra("sesion", sesion.toString());
-            i.setClass(this,SharedPrefsActivity.class);
-            startActivity(i);*/
 
-
-            String salir = QUIT + CRLF;
-            flujo.write(salir.getBytes());
-            entrada=is.readLine();
+            //String salir = QUIT + CRLF;
+            //flujo.write(salir.getBytes());
+            //entrada=is.readLine();
             flujo.flush();
         }catch(IOException ex){
             System.out.println("Error en el cliente"+ex.getMessage());
@@ -197,6 +191,16 @@ class MiTareaAsincrona extends AsyncTask<InetSocketAddress, Void, String> implem
         SharedPreferences.Editor edit = context.getSharedPreferences(PREFERENCE,context.MODE_PRIVATE).edit();
         edit.putString("Sesion",sesion);
         edit.commit();
+        if(sesion!=null){
+
+            Intent i = new Intent(context, SharedPrefsActivity.class);
+            i.putExtra("sesion", sesion.toString());
+            i.setClass(context,SharedPrefsActivity.class);
+            context.startActivity(i);
+
+
+        }
+
 
 
     }
@@ -207,26 +211,6 @@ class MiTareaAsincrona extends AsyncTask<InetSocketAddress, Void, String> implem
     }
 }
 
-class Autenticacion {
 
-    private String usuario;
-    private String contraseña;
-
-    public Autenticacion() {}
-
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
-    }
-
-    public String getUsuario() { return usuario; }
-
-    public String getContraseña() {
-        return contraseña;
-    }
-
-    public void setContraseña(String contraseña) {
-        this.contraseña = contraseña;
-    }
-}
 
 

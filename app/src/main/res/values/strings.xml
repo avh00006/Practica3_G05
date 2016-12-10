@@ -34,6 +34,7 @@
     <string name="title_activity_activity_register">Activity_register</string>
     <string name="edit_puerto">Introduzca el puerto:</string>
     <string name="btnxlog">¿Ya estás registrado?Autenticate!!</string>
+    <string name="actfin">Actividad que contendrá el servicio de la aplicación</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->
