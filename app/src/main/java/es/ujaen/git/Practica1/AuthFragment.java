@@ -22,17 +22,17 @@ public class AuthFragment extends Fragment {
 
 
     private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    //private static final String ARG_PARAM2 = "param2";
 
 
     private String mUser;
-    private String mPuerto;
+    //private String mPuerto;
 
     private Registro mRegistro = new Registro("","","",0);
 
 
     private EditText user = null;
-    private EditText puert = null;
+    //private EditText puert = null;
 
 
 
@@ -53,7 +53,7 @@ public class AuthFragment extends Fragment {
         AuthFragment fragment = new AuthFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, user);
-        args.putString(ARG_PARAM2,puerto);
+        //args.putString(ARG_PARAM2,puerto);
         fragment.setArguments(args);
         return fragment;
     }
@@ -70,9 +70,9 @@ public class AuthFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         mUser = getArguments().getString(ARG_PARAM1);
-        mPuerto = getArguments().getString(ARG_PARAM2);;
+        //mPuerto = getArguments().getString(ARG_PARAM2);;
         mRegistro.setmUser(mUser);
-        mRegistro.setmPuerto(Integer.parseInt(mPuerto));
+        //mRegistro.setmPuerto(Integer.parseInt(mPuerto));
 
 
 
@@ -102,11 +102,11 @@ public class AuthFragment extends Fragment {
 
         /**Identificamos los elementos EditText y los almacenamos*/
         user = (EditText)fragmento.findViewById(R.id.user2);
-        puert = (EditText)fragmento.findViewById(R.id.puerto);
+        //puert = (EditText)fragmento.findViewById(R.id.puerto);
         /**Se guardan los datos en los elementos EditText*/
-        mPuerto=""+mRegistro.getmPort();
+        //mPuerto=""+mRegistro.getmPort();
         user.setText(mRegistro.getmUser());
-        puert.setText(mPuerto);
+        //puert.setText(mPuerto);
 
         return fragmento;
 

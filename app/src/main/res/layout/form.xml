@@ -44,6 +44,75 @@
                 android:layout_weight="2"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/user3"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:hint="@string/user4"
+                android:layout_height="wrap_content"
+                android:id="@+id/user4"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textColorHighlight="#FFFFFF" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/NIF1"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:hint="@string/NIF2"
+                android:layout_height="wrap_content"
+                android:id="@+id/NIF2"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textColorHighlight="#FFFFFF" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/email1"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:hint="@string/email2"
+                android:layout_height="wrap_content"
+                android:id="@+id/email2"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textColorHighlight="#FFFFFF" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/pass2"
                 android:textColor="#FFFFFF" />
 
@@ -61,51 +130,8 @@
                 android:textColorLink="@color/abc_primary_text_disable_only_material_dark" />
         </TableRow>
 
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_weight="2"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/dominio"
-                android:textColor="#FFFFFF" />
 
-            <EditText
-                android:layout_width="0dp"
-                android:layout_weight="3"
-                android:hint="Dirección de red o dominio"
-                android:layout_height="wrap_content"
-                android:id="@+id/dominio"
-                android:textColorHint="#FFFFFF"
-                android:textColor="#FFFFFF" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
-
-            <TextView
-                android:layout_weight="2"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/puerto"
-                android:textColor="#FFFFFF" />
-
-            <EditText
-                android:layout_weight="3"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/puerto"
-                android:textColorHint="#FFFFFF"
-                android:textColorLink="#FFFFFF"
-                android:hint="@string/edit_puerto"
-                android:inputType="number"
-                android:textColor="#FFFFFF" />
-        </TableRow>
 
     </TableLayout>
 
@@ -118,12 +144,23 @@
         android:onClick="Autenticacion" />
 
     <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnxlog"
+        android:id="@+id/btnxlog"
+        android:layout_gravity="center_horizontal"
+        style="@style/Platform.V14.AppCompat.Light"
+        android:layout_marginTop="20dp"
+        android:onClick="Plogeo" />
+
+    <Button
         style="@style/Base.V12.Widget.AppCompat.AutoCompleteTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/info"
         android:id="@+id/info"
         android:layout_gravity="center_horizontal"
-        android:textColor="@android:color/holo_green_dark"
-        android:onClick="ejecutar_info" />
+        android:textColor="@android:color/background_dark"
+        android:onClick="ejecutar_info"
+        android:layout_marginTop="50dp" />
 </LinearLayout>

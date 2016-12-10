@@ -1,5 +1,6 @@
 package es.ujaen.git.Practica1;
 
+import android.content.SharedPreferences;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.content.Intent;
@@ -17,10 +18,10 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Método que crea el layout inicial
      * @param savedInstanceState recibe los datos almacenados
-     * @param fm crea el fragmento
-     * @param ft añade el fragmento
-     * @param f almacena el fragmento en el contenedor main_frame
-     * @param au creamos un objeto AuthFragment
+     * //@param fm crea el fragmento
+     * //@param ft añade el fragmento
+     * //@param f almacena el fragmento en el contenedor main_frame
+     * //@param au creamos un objeto AuthFragment
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction ft = fm.beginTransaction();
 
         android.support.v4.app.Fragment f = fm.findFragmentById(R.id.main_frame);
+
+
 
 
         /**Guardamos los datos para no perderlos cuando cambia la configuración
@@ -53,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Método que cambia a otra actividad donde se muestra informacion de la práctica
      * @param view es el objeto de la vista
-     * @param Intent in crea una intención para cambiar de actividad
+     * //@param Intent in crea una intención para cambiar de actividad
      */
     public void ejecutar_info (View view){
         Intent in = new Intent(this,InfoClase.class);
@@ -66,25 +69,38 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Método que cambia a otra actividad
      * @param view es el objeto de la vista
-     * @param i crea una intención para cambiar de actividad
+     * //@param i crea una intención para cambiar de actividad
      */
     public void Autenticacion(View view){
 
         /**Identificamos los elementos EditText y los almacenamos*/
         final EditText txtNombre = (EditText)findViewById(R.id.user2);
-        final EditText txtPuerto = (EditText)findViewById(R.id.puerto);
+        //final EditText txtPuerto = (EditText)findViewById(R.id.puerto);
 
         Intent i = new Intent(this, Autenticado.class);
 
         /**Pasamos parametros a la nueva actividad de tipo (nombre,valor)*/
         i.putExtra("Nombre", txtNombre.getText().toString());
-        i.putExtra("Puerto",txtPuerto.getText().toString());
+        //i.putExtra("Puerto",txtPuerto.getText().toString());
 
         /**Añadimos los datos a la clase*/
         i.setClass(MainActivity.this,Autenticado.class);
         startActivity(i);
 
     }
+
+    public void  Plogeo(View view){
+        Intent pl = new Intent(this,Logeo.class);
+
+        startActivity(pl);
+
+    }
+
+
+
+
+
+
 
 
 }
