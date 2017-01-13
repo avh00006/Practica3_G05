@@ -1,4 +1,4 @@
-package es.ujaen.git.Practica1;
+package es.ujaen.git.Practica3_G05;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

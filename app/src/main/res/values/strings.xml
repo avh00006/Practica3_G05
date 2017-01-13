@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Practica1</string>
-    <string name="main_title">Practica1</string>
+    <string name="app_name">Practica3_G05</string>
+    <string name="main_title">Practica3_G05</string>
     <string name="main_description">Práctica realizada para la asignatura <i>Servicios Móviles</i> del Grado de Ingeniería Telemática de la Universidad de Jaén\nGrupo 6: Angel Venteo Heras y Francisco Jose Aguado Martin</string>
     <string name="user">Nombre</string>
     <string name="user2"></string>
@@ -28,17 +28,25 @@
     <string name="dominio">Dominio</string>
     <string name="puerto">Puerto</string>
     <string name="loginbtn">Registrar</string>
+
     <string name="reg">Registrate</string>
     <string name="info">Información</string>
     <string name="title_activity_activity_login">Activity_login</string>
     <string name="title_activity_activity_register">Activity_register</string>
     <string name="edit_puerto">Introduzca el puerto:</string>
     <string name="btnxlog">¿Ya estás registrado?Autenticate!!</string>
-    <string name="actfin">Actividad que contendrá el servicio de la aplicación</string>
-
-
+    <string name="actfin">Hola <b>Juan</b>, su rutina es:</string>
+    <string name="QT">Salir</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="nick">Nick</string>
     <string name="title_activity_shared_prefs">SharedPrefsActivity</string>
+    <!-- TODO: Dias de la semana -->
+    <string name="btnlun">Lunes</string>
+    <string name="btnmar">Martes</string>
+    <string name="btnmi">Miercoles</string>
+    <string name="btnju">Jueves</string>
+    <string name="btnvi">Viernes</string>
+
+    btnmar
 </resources>

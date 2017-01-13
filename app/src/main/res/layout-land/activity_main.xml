@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/fondo2"
-    tools:context="es.ujaen.git.Practica1.MainActivity">
+    tools:context="es.ujaen.git.Practica3_G05.MainActivity">
 
 
     <TextView
@@ -26,8 +26,8 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_centerHorizontal="true"
         android:id="@+id/main_frame"
-        android:layout_below="@+id/main_text_title">
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
     </FrameLayout>
 </RelativeLayout>

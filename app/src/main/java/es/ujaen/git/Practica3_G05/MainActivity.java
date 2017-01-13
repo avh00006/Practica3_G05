@@ -1,6 +1,5 @@
-package es.ujaen.git.Practica1;
+package es.ujaen.git.Practica3_G05;
 
-import android.content.SharedPreferences;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.content.Intent;
@@ -89,6 +88,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
+    /**Método que cambia a la actividad de autenticación
+     *
+     * @param view es el objeto de la vista
+     */
     public void  Plogeo(View view){
         Intent pl = new Intent(this,Logeo.class);
 

@@ -1,4 +1,4 @@
-package es.ujaen.git.Practica1;
+package es.ujaen.git.Practica3_G05;
 
 /**
  * Created by Francisco on 30/11/2016.
